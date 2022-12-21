@@ -1,8 +1,8 @@
 input_file = open("2022/day_5/day_5_input.txt").readlines()
 
-rules = map(lambda string: eval( string.replace("move", "").replace("from", ",").replace("to", ",")), input_file[10:])
+rules = map(lambda string: eval(string.replace("move", "").replace("from", ",").replace("to", ",")), input_file[10:])
 crates1 = [""] + [*map(lambda row: "".join(row).replace(" ", "")[::-1], [*zip(*input_file[:8])][1::4])]
-crates2 = [""] + [*map(lambda row: "".join(row).replace(" ", "")[::-1], [*zip(*input_file[:8])][1::4])]
+crates2 = [*crates1]
 
 for amount, src, dest in rules:
     crates1[dest] += crates1[src][ -amount:][::-1]
