@@ -1,4 +1,4 @@
-moves =open("2021/day_2/day_2_input.txt").read().splitlines()
+moves =open("2021/input/day_2.txt").read().splitlines()
 
 
 result = lambda ch: sum(int(move[-1]) for move in moves if move[0] == ch)
