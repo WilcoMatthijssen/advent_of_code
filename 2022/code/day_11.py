@@ -1,5 +1,5 @@
 import math
-file_input = open("2022/day_11/day_11_input.txt").read().splitlines()
+file_input = open("2022/input/day_11.txt").read().splitlines()
 
 
 monkOp = [line[19:] for line in file_input[2::7]]
