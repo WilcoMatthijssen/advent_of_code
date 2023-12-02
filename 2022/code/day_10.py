@@ -1,4 +1,4 @@
-file_input = open("2022/day_10/day_10_input.txt")
+file_input = open("2022/input/day_10.txt")
 
 
 from functools import reduce
