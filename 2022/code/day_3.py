@@ -1,4 +1,4 @@
-file_input = open("2022/day_3/day_3_input.txt").read().splitlines()
+file_input = open("2022/input/day_3.txt").read().splitlines()
 
 value = lambda x: ord(x) -(38  if x.isupper() else 96)
 
