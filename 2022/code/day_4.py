@@ -23,7 +23,7 @@
 
 
 make_set = lambda a,b,c,d: (set(range(a, b+1)), set(range(c, d+1)))
-input_set = list(map(lambda string: make_set(*map(int,string.replace(',', '-').split('-'))), open("2022/day_4/day_4_input.txt")))
+input_set = list(map(lambda string: make_set(*map(int,string.replace(',', '-').split('-'))), open("2022/input/day_4.txt")))
 
 
 print(sum(map(lambda sets: sets[0] <= sets[1] or sets[1] <= sets[0], input_set)))
