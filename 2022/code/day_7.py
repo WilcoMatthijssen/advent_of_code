@@ -19,7 +19,7 @@ from itertools import accumulate
 # print(sum(s for s in dirs.values() if s <= 100_000),
 #       min(s for s in dirs.values() if s >= dirs[''] - 40_000_000))
 
-lines = [*filter(lambda line: not line.startswith("dir") and not line.startswith("$ ls"), open("2022/day_7/day_7_input.txt"))]
+lines = [*filter(lambda line: not line.startswith("dir") and not line.startswith("$ ls"), open("2022/input/day_7.txt"))]
 dirs = defaultdict(int)
 
 for line in lines:
