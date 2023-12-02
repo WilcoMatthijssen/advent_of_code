@@ -1,4 +1,4 @@
-file_input = {*map(eval, open("2022/day_18/day_18_input.txt"))}
+file_input = {*map(eval, open("2022/input/day_18.txt"))}
 
 neighbors = lambda x,y,z: {(x+1,y,z),(x,y+1,z),(x,y,z+1),(x-1,y,z),(x,y-1,z),(x,y,z-1)}
 
