@@ -1,4 +1,4 @@
-nums = open("2021/day_1/day_1_input.txt").read().splitlines()
+nums = open("2021/input/day_1.txt").read().splitlines()
 
 
 answer = sum(x < y for x, y in zip(nums, nums[1:]))
