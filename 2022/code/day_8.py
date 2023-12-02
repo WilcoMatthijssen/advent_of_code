@@ -1,4 +1,4 @@
-file_input =  [list(col) for col in open("2022/day_8/day_8_input.txt").read().split("\n")]
+file_input =  [list(col) for col in open("2022/input/day_8.txt").read().split("\n")]
 from functools import reduce
 
 
