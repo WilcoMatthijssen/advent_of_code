@@ -13,4 +13,5 @@ for line in open("2022/input/day_9.txt"):
                 rope[i] += sign(dist)
                 seen[i].add(rope[i])
 
-print(len(seen[1]), len(seen[-1]))
+print(len(seen[1]))
+print(len(seen[-1]))

@@ -32,5 +32,5 @@ for line in lines:
     else:
         for p in accumulate(curr):
             dirs[p] += int(line.split()[0])
-print(sum(s for s in dirs.values() if s <= 100_000),
-      min(s for s in dirs.values() if s >= dirs[''] - 40_000_000))
+print(sum(s for s in dirs.values() if s <= 100_000))
+print(min(s for s in dirs.values() if s >= dirs[''] - 40_000_000))

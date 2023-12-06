@@ -17,6 +17,6 @@ def momkey(part):
         monkItems[i] = []
     return sorted(monkInspections)[-1]*sorted(monkInspections)[-2]
 
-# print("part 1:", momkey(20))
-# print("part 2:", momkey(10000))
+print(momkey(20))
+print(momkey(10000))
 

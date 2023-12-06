@@ -11,5 +11,5 @@ for amount, src, dest in rules:
     crates2[dest] += crates2[src][ -amount:]
     crates2[src ]  = crates2[src][:-amount ]
 
-print(f"part1:{''.join(x[-1] for x in crates1 if x)}")
-print(f"part2:{''.join(x[-1] for x in crates2 if x)}")
+print(''.join(x[-1] for x in crates1 if x))
+print(''.join(x[-1] for x in crates2 if x))
